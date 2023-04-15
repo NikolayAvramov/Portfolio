@@ -1,0 +1,75 @@
+.link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+.container {
+	width: 110rem;
+	display: flex;
+	justify-content: space-between;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.title {
+	text-transform: uppercase;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* ************************************
+ FOR 15inch Laptop 1500 /915 
+************************************ */
+@media (max-width: 94rem) {
+	.container {
+		width: 77rem;
+	}
+}
+
+@media (max-width: 80rem) {
+	.container {
+		width: 68rem;
+	}
+}
+/* ************************************
+FOR IPAD  1080/810 Landscape
+************************************ */
+@media (max-width: 69rem) {
+	.container {
+		width: 62rem;
+	}
+}
+@media (max-width: 64rem) {
+	.container {
+		width: 55rem;
+	}
+}
+@media (max-width: 58rem) {
+	.container {
+		width: 50rem;
+	}
+}
+/* ************************************
+ FOR IPAD 810 /1080 Portrait
+************************************ */
+@media (max-width: 52rem) {
+	.container {
+		width: 41rem;
+	}
+}
+@media (max-width: 42rem) {
+	.container {
+		width: 23rem;
+	}
+	.nav {
+		flex-direction: column;
+	}
+}
+@media (max-width: 30rem) {
+	.container {
+		width: 20rem;
+	}
+	.nav {
+		flex-direction: column;
+	}
+}

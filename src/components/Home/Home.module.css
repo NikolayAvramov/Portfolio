@@ -1,0 +1,31 @@
+.img {
+	width: 80vw;
+	max-width: 300px;
+	margin: 10px auto;
+}
+
+.wrapper {
+	width: 110rem;
+	text-align: center;
+}
+.allSections {
+	display: flex;
+	justify-content: space-between;
+}
+.section {
+	border: 1px solid rgb(179, 245, 237);
+	width: 21rem;
+	background-color: rgb(102, 102, 102);
+	box-shadow: 0 0 0.5rem 0.5rem rgb(191, 191, 191);
+	font-size: 1.1rem;
+	font-family: sans-serif;
+}
+.title {
+	margin: 0;
+	background-color: rgb(154, 148, 140);
+	height: 3rem;
+	font-size: 2rem;
+}
+.section li {
+	text-align: start;
+}

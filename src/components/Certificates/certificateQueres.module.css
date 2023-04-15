@@ -1,0 +1,83 @@
+/* ************************************
+ FOR 17inch Laptop 1900 /915 
+************************************ */
+@media (max-width: 140em) {
+	.wrapper {
+		padding-top: 8rem;
+		display: grid;
+		grid-template-columns: 22rem 22rem 22rem 22rem 22rem;
+		row-gap: 2rem;
+	}
+	.img {
+		box-sizing: border-box;
+		width: 20rem;
+		align-items: center;
+	}
+}
+/* ************************************
+ FOR 15inch Laptop 1500 /915 
+************************************ */
+@media (max-width: 94em) {
+	.wrapper {
+		padding-top: 7rem;
+		display: grid;
+		grid-template-columns: 22rem 22rem 22rem;
+		row-gap: 1.8rem;
+	}
+	.img {
+		box-sizing: border-box;
+		width: 20rem;
+		align-items: center;
+	}
+}
+
+/* ************************************
+FOR IPAD  1080/810 Landscape
+************************************ */
+
+@media (max-width: 68em) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 22rem 22rem 22rem;
+		row-gap: 2rem;
+		text-align: center;
+	}
+	.img {
+		box-sizing: border-box;
+		width: 20rem;
+		align-items: center;
+	}
+}
+
+/* ************************************
+ FOR IPAD 810 /1080 Portrait
+************************************ */
+
+@media (max-width: 52em) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 22rem 22rem;
+		row-gap: 2rem;
+	}
+	.img {
+		box-sizing: border-box;
+		width: 20rem;
+		align-items: center;
+	}
+}
+/* ************************************
+ FOR Smarrphones 412 /915 Portrait
+************************************ */
+
+@media (max-width: 42em) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 22rem;
+		row-gap: 2rem;
+	}
+	.img {
+		box-sizing: border-box;
+		width: 20rem;
+		align-items: center;
+	}
+}
