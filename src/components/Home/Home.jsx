@@ -1,6 +1,7 @@
 import homeCss from "./Home.module.css";
 import myPic from "../../assets/me.jpg";
-
+import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
+import {Link} from "react-router-dom";
 export function Home() {
 	return (
 		<div className={homeCss.wrapper}>
@@ -11,9 +12,20 @@ export function Home() {
 					<h3 className={homeCss.title}>About me</h3>
 					<p>I am Nikolay Kirilov Avramov, 28 years old, from Momchilgrad</p>
 					Contact me on:
-					<ul>
-						<li></li>
-					</ul>
+					<div>
+						<p>avramov94@mail.bg</p>
+						<p>+359894479756</p>
+						<p>
+							<Link className={homeCss.contactLink} to="https://github.com/NikolayAvramov">
+								<AiFillGithub />
+							</Link>
+						</p>
+						<p>
+							<Link className={homeCss.contactLink} to="https://www.linkedin.com/in/nikolay-avramov-46b836260/">
+								<AiFillLinkedin />
+							</Link>
+						</p>
+					</div>
 				</section>
 				<section className={homeCss.section}>
 					<h3 className={homeCss.title}>Education</h3>

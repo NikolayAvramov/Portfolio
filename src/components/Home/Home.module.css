@@ -14,7 +14,7 @@
 }
 .section {
 	border: 1px solid rgb(179, 245, 237);
-	width: 21rem;
+	width: 18%;
 	background-color: rgb(102, 102, 102);
 	box-shadow: 0 0 0.5rem 0.5rem rgb(191, 191, 191);
 	font-size: 1.1rem;
@@ -28,4 +28,50 @@
 }
 .section li {
 	text-align: start;
+}
+.contactLink {
+	font-size: 1.4rem;
+	list-style: none;
+	color: rgb(199, 199, 201);
+}
+p {
+	margin: 0.5rem;
+}
+@media (max-width: 96em) {
+	.wrapper {
+		width: 100%;
+	}
+	.section {
+		width: 90%;
+	}
+	.allSections {
+		display: grid;
+		grid-template-columns: 30% 30% 30%;
+		row-gap: 2rem;
+	}
+}
+@media (max-width: 70em) {
+	.wrapper {
+		width: 100%;
+	}
+
+	.allSections {
+		display: grid;
+		grid-template-columns: 22rem 22rem;
+		row-gap: 2rem;
+	}
+}
+@media (max-width: 47em) {
+	.wrapper {
+		width: 100%;
+	}
+	.img {
+		width: 80%;
+	}
+	.allSections {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 20rem;
+		row-gap: 2rem;
+	}
 }
