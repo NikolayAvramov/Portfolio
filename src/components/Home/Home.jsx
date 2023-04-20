@@ -29,7 +29,7 @@ export function Home() {
 				</section>
 				<section className={homeCss.section}>
 					<h3 className={homeCss.title}>Education</h3>
-					<p>I started my education as a web developer in January 2022 in Sofuni. There I took the courses:</p>
+					<p>I started gaining skills as a web developer in SofUni in January 2022. There I took the courses:</p>
 					<ul>
 						<li>Programming Basics with JavaScript</li>
 						<li>Programming Fundamentals with JavaScript</li>
@@ -43,26 +43,27 @@ export function Home() {
 					<ul>
 						<li>JavaScript</li>
 						<li>ReactJs</li>
-						<li>Html</li>
+						<li>HTML</li>
 						<li>Css</li>
-					</ul>
-				</section>
-				<section className={homeCss.section}>
-					<h3 className={homeCss.title}>Skils</h3>
-					<ul>
-						<li>Good teamwork</li>
-						<li>Algorithmic thinking</li>
-						<li>Very good level of written and spoken English</li>
-						<li> Problem Solver</li>
-						<li>I adapt quickly</li>
-						<li>Creativity</li>
-						<li>Attention to Details</li>
 						<li>Basic skills with GitHub</li>
 					</ul>
 				</section>
 				<section className={homeCss.section}>
+					<h3 className={homeCss.title}>Skills</h3>
+					<ul>
+						<li>Good in teamwork</li>
+						<li>Algorithmic thinking</li>
+						<li>Very good level of written and spoken English</li>
+						<li> Problem Solver</li>
+						<li>Adapt quickly</li>
+						<li>Creativity</li>
+						<li>Attention to Details</li>
+					</ul>
+				</section>
+				<section className={homeCss.section}>
 					<h3 className={homeCss.title}>Experience</h3>
-					<p>I have no professional experience as a developer, but during my studies at Softuni we have made several Single Page Applications with vanilla JS and React.</p>
+					<p>I have no professional experience as a developer, but during my studies at Softuni we have made JavaScript Single Page Applications with vanilla JS and ReactJS.</p>
+					<Link to="#">Last ReactJS project</Link>
 				</section>
 			</div>
 		</div>
