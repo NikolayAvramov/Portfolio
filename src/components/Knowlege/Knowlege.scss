@@ -1,6 +1,44 @@
 .knowlege {
     background-color: aqua;
-    &-list-item-image {
-        width: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0.1rem;
+    &-link {
+        text-decoration: none;
+        &:link,
+        &:visited {
+            color: rgb(27, 27, 27);
+        }
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+        padding: 0;
+        padding-top: 1rem;
+        transition: all 5s;
+
+        &-item {
+            list-style: none;
+            text-align: center;
+            &:hover {
+                transform: scale(1.3);
+            }
+            &-title {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+            &-image {
+                &:hover {
+                    transform: translateY(-0.2rem);
+                }
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+        // &:hover &-item:not(:hover) {
+        //     transform: translateY(0.2rem);
+        // }
     }
 }

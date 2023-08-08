@@ -1,5 +1,5 @@
 import "./Knowlege.scss";
-
+import { Link } from "react-router-dom";
 import jsIcon from "../../assets/js.png";
 import reactIcon from "../../assets/react.png";
 import htmlIcon from "../../assets/html.png";
@@ -10,15 +10,24 @@ export function Knowlege() {
     return (
         <>
             <div className="knowlege">
-                {" "}
                 <ul className="knowlege-list">
                     <li className="knowlege-list-item">
-                        <img
-                            src={jsIcon}
-                            alt="js"
-                            className="knowlege-list-item-image"
-                        />
-                        <h3 className="knowlege-list-item-title">JavaScript</h3>
+                        <Link
+                            className="knowlege-link"
+                            to={
+                                "https://react-icons.github.io/react-icons/search?q=sass"
+                            }
+                            target="_blank"
+                        >
+                            <img
+                                src={jsIcon}
+                                alt="js"
+                                className="knowlege-list-item-image"
+                            />
+                            <h3 className="knowlege-list-item-title">
+                                JavaScript
+                            </h3>
+                        </Link>
                     </li>
                     <li className="knowlege-list-item">
                         <img
