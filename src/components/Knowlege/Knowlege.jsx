@@ -9,6 +9,7 @@ import sassIcon from "../../assets/sass.png";
 export function Knowlege() {
     return (
         <>
+            <h2 className="knowlege-title">Knowlege</h2>
             <div className="knowlege">
                 <ul className="knowlege-list">
                     <li className="knowlege-list-item">

@@ -1,21 +1,21 @@
-import {Link} from "react-router-dom";
-import NavCss from "./Header.module.css";
+import { Link } from "react-router-dom";
+import "./Header.scss";
 
 export function Header() {
-	return (
-		<div className={NavCss.container}>
-			<p className={NavCss.title}>Nikolay Avramov</p>
-			<nav className={NavCss.nav}>
-				<Link className={NavCss.link} to="/">
-					Home
-				</Link>
-				<Link className={NavCss.link} to="/certificate">
-					Cerificates
-				</Link>
-				<Link className={NavCss.link} to="/feedback">
-					Feedback
-				</Link>
-			</nav>
-		</div>
-	);
+    return (
+        <div className="header">
+            <p className="header-title">Nikolay Avramov</p>
+            <nav className="header-nav">
+                <Link className="header-nav-link" to="/">
+                    Home
+                </Link>
+                <Link className="header-nav-link" to="/certificate">
+                    Cerificates
+                </Link>
+                <Link className="header-nav-link" to="/feedback">
+                    Feedback
+                </Link>
+            </nav>
+        </div>
+    );
 }

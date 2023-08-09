@@ -1,6 +1,6 @@
 html {
     font-size: 62.5%;
-    background-color: rgb(219, 154, 107);
+    background-color: rgb(249, 252, 221);
 }
 
 #root {
@@ -8,6 +8,6 @@ html {
 
     margin: 0 auto;
     padding: 0;
-    background-color: burlywood;
+    background-color: rgb(223, 217, 217);
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }

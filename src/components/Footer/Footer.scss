@@ -1,0 +1,21 @@
+.footer {
+    padding-top: 4rem;
+    min-height: fit-content;
+    text-align: center;
+    font-size: 1.3rem;
+    &-contact-info {
+        display: inline-block;
+    }
+    &-visit-link {
+        font-size: 2.5rem;
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        &,
+        &:active,
+        &:visited {
+            color: rgb(71, 71, 71);
+        }
+    }
+    padding-bottom: 3rem;
+}

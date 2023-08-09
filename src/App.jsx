@@ -9,18 +9,22 @@ import { Feedback } from "./components/Feedback/Feedback.jsx";
 import { Knowlege } from "./components/Knowlege/Knowlege";
 
 import { Projects } from "./components/Projects/Project";
+import { About } from "./components/About/About";
+import { Footer } from "./components/Footer/Footer";
 
 export function App() {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
+            <About />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/certificate" element={<Certificates />} />
+                <Route path="/feedback" element={<Feedback />} />
+            </Routes>
+            <Knowlege />
             <Projects />
-            {/* <Knowlege /> */}
-            {/* <Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/certificate" element={<Certificates />} />
-				<Route path="/feedback" element={<Feedback />} />
-			</Routes> */}
+            <Footer />
         </>
     );
 }
