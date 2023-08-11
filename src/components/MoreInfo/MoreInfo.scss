@@ -1,21 +1,43 @@
+@import "../../mixins";
 .more {
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    @include respond(phoneB) {
+        flex-direction: column;
+    }
+
     &-right-side {
+        ul {
+            padding: 0;
+        }
         width: 50%;
         text-align: center;
+        @include respond(phoneB) {
+            width: 90%;
+        }
     }
     &-left-side {
+        ul {
+            padding: 0;
+        }
         width: 50%;
         text-align: center;
         border-right: 2px solid gray;
         display: block;
+        @include respond(phoneB) {
+            width: 90%;
+            border: none;
+        }
     }
+
     &-text {
         text-align: center;
         width: 70%;
         margin: 0 auto;
+        @include respond(phoneB) {
+            width: 90%;
+        }
     }
     &-list-item {
         list-style: none;

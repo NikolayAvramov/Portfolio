@@ -1,7 +1,7 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
-export function Footer() {
+export function Footer({ setShowFeedback }) {
     return (
         <>
             <div className="footer">
@@ -15,13 +15,29 @@ export function Footer() {
 
                 <h2 className="footer-visit-title">Visite me on:</h2>
                 <div className="footer-link-wrapper">
-                    <Link className="footer-visit-link">
+                    <Link
+                        to={"https://github.com/NikolayAvramov"}
+                        className="footer-visit-link"
+                        target="_blank"
+                    >
                         <AiOutlineGithub />
                     </Link>
-                    <Link className="footer-visit-link">
+                    <Link
+                        to={
+                            "https://www.linkedin.com/in/nikolay-avramov-46b836260"
+                        }
+                        className="footer-visit-link"
+                        target="_blank"
+                    >
                         <AiFillLinkedin />
                     </Link>
                 </div>
+                <Link
+                    className="footer-feedback-btn"
+                    onClick={() => setShowFeedback(value => !value)}
+                >
+                    Leave me feedback
+                </Link>
             </div>
         </>
     );

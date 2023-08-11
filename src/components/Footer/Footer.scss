@@ -3,6 +3,7 @@
     min-height: fit-content;
     text-align: center;
     font-size: 1.3rem;
+    padding-bottom: 3rem;
     &-contact-info {
         display: inline-block;
         &:not(:last-child) {
@@ -20,5 +21,24 @@
             color: rgb(71, 71, 71);
         }
     }
-    padding-bottom: 3rem;
+    &-link-wrapper {
+        margin-bottom: 1rem;
+    }
+    &-feedback-btn {
+        &:visited,
+        &:active {
+            color: black;
+        }
+        font-size: 1.6rem;
+        text-decoration: none;
+        font-weight: 700;
+        background-image: linear-gradient(
+            to left,
+            rgb(212, 194, 161),
+            rgb(166, 245, 166)
+        );
+        border: 1px dashed red;
+        border-radius: 10rem;
+        padding: 0.5rem;
+    }
 }

@@ -1,27 +1,91 @@
+@import "../../mixins";
 .about {
     display: flex;
     justify-content: space-around;
+    @include respond(phoneB) {
+        flex-direction: column-reverse;
+        place-items: center;
+    }
     &-text {
         margin: 12rem;
         width: 70%;
         font-size: 1.7rem;
         animation: text-show 1s ease-out;
+        @include respond(tab-land) {
+            margin: 7rem;
+        }
+        @include respond(tab-port) {
+            margin: 5rem;
+        }
+        @include respond(tab-port-small) {
+            margin: 3rem;
+        }
+        @include respond(phoneB) {
+            margin: 4rem auto;
+        }
     }
     &-pic {
         margin-top: 10rem;
         height: 40rem;
+        margin-left: 50%;
+        transform: translate(-50%);
+        @include respond(tab-land) {
+            height: 32rem;
+        }
+        @include respond(tab-port) {
+            height: 25rem;
+        }
+        @include respond(phoneB) {
+            height: 35rem;
+            margin-left: 50%;
+            transform: translate(-50%);
+        }
+        @include respond(phoneS) {
+            height: 26rem;
+        }
     }
     &-title {
         font-size: 5rem;
         text-align: center;
         margin-top: 20%;
+        &-mobile {
+            font-size: 2.7rem;
+            text-align: center;
+            margin-top: 20%;
+            display: none;
+            @include respond(phoneB) {
+                display: block;
+            }
+            @include respond(phoneS) {
+                font-size: 2rem;
+            }
+        }
         &-text {
             color: rgb(8, 197, 8);
         }
+        @include respond(tab-land) {
+            font-size: 3.5rem;
+        }
+        @include respond(tab-port) {
+            font-size: 2.7rem;
+        }
+        @include respond(tab-port-small) {
+            font-size: 2.2rem;
+        }
+        @include respond(phoneB) {
+            display: none;
+        }
     }
+
     &-left-side {
-        width: 50%;
+        width: 100%;
         font-size: 1.3rem;
+        @include respond(phoneB) {
+            width: 90%;
+        }
+    }
+    &-right-side {
+        width: 90%;
     }
 }
 
@@ -34,21 +98,7 @@
         transform: translateY(3rem);
         opacity: 0;
     }
-    // 10% {
-    //     transform: translateY(2.5rem);
-    // }
-    // 30% {
-    //     transform: translateY(2rem);
-    // }
-    // 40% {
-    //     transform: translateY(1.5rem);
-    //}
-    // 50% {
-    //     transform: translateY(1rem);
-    // }
-    // 70% {
-    //     transform: translateY(0.5rem);
-    // }
+
     100% {
         transform: translateY(0rem);
     }

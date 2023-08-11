@@ -42,7 +42,14 @@ export function About() {
                         /> */}
                     </p>
                 </div>
-                <div className="right-side">
+                <div className="about-right-side">
+                    <h1 className="about-title-mobile">
+                        I'm
+                        <span className="about-title-text"> {text}</span>
+                        <span className="cursor-mobile">
+                            <Cursor />
+                        </span>
+                    </h1>
                     <img className="about-pic" src={myPic} alt="my pic" />
                 </div>
             </div>
