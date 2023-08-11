@@ -1,0 +1,23 @@
+.more {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    &-right-side {
+        width: 50%;
+        text-align: center;
+    }
+    &-left-side {
+        width: 50%;
+        text-align: center;
+        border-right: 2px solid gray;
+        display: block;
+    }
+    &-text {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    &-list-item {
+        list-style: none;
+    }
+}
